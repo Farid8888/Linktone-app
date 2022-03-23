@@ -1,0 +1,132 @@
+.aside{
+    bottom: 0;
+    left: 0;
+    padding-bottom: 50px;
+    position: fixed;
+    top: 60px;
+    width: 300px;
+    height: auto;
+    background-color:#1d2127 ;
+}
+
+
+.nav{
+    color: #465162;
+    margin:15px
+}
+
+.overline{
+    position: fixed;
+    width: 100%;
+    left:300px;
+    top: 100px;
+    z-index: 10;
+    }
+
+.line {    
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.line:before,
+.line:after{
+    content: '';
+    position: absolute;
+    top: 12px; 
+    left:400px;
+    height: 4px;
+    z-index: 3;
+}
+.line:before{   
+    left: 0;
+    width: 127px;
+    max-width: 100%;
+    background: #2b70d6;
+    z-index: 4;
+}
+.line:after{
+    left: 127px;
+    right: 0;
+    background: rgba(161, 161, 160, 0.452);
+    z-index: 4;
+}
+
+.icon{
+    color: white;
+    height: 52px;
+    border-right: 0.5px solid rgba(128, 128, 128, 0.39);
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0 0 0 7px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color:#0d6efd;
+    transition: color 400ms ease-out;
+}
+
+.sidebar{
+display: flex;
+justify-content: space-between;
+background-color: #1d2127;
+/* padding: 10px; */
+font-size: 0.8rem;
+}
+
+
+.dashboard{
+    color: #abb4be;
+    background-color: #1d2127;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dashboard:hover{
+    color:#0d6efd;
+    background-color: #465162;
+    transition: color 400ms ease-out;
+}
+
+.dashboards{
+    color: #abb4be;
+    background-color: #1d2127;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.dashboards:hover{
+    color:#0d6efd;
+    background-color: #465162;
+    transition: color 400ms ease-out;
+}
+
+.dashRow{
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:766px){
+    .aside{
+        display:none ;
+        opacity: 0;
+    }
+    .overline{
+        left:0;
+        top:170px;
+        }
+}

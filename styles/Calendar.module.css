@@ -1,0 +1,22 @@
+.calendar{
+    background-color: #171717;
+    height: 100%;
+    color:#777;
+    padding: 20px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 25px 45px;
+}
+
+.chevron{
+    display: flex;
+    align-items: center;
+   cursor: pointer;
+}
+
+.collapse{
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+  }
+
+
+.calendarShow{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 25%;
+    z-index: 10000;
+  }
+  
+  .calendarShow.active{
+      right: 0;
+  }
+  .mainContent{
+      transform: translateX(-25%);
+  }
+
+  @media(max-width:1030px){
+      .calendarShow{
+          width: 35%;
+      }
+  }
+
+  @media(max-width:766px){
+    .mainContent{
+        transform: translateX(0);
+    }
+    .calendarShow.active{
+        right: 0;
+        width: 100%;
+        transition: all 1s ease-out;
+    }
+    .calendarShow{
+        transition: all 1s ease-out;
+    }
+  }
+
+
+ 

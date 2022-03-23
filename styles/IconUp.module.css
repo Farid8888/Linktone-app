@@ -1,0 +1,35 @@
+.visible{
+position: fixed;
+right: 20px;
+bottom:0;
+background-color: #282d36d3;
+height: 35px;
+width: 40px;
+opacity: 1;
+border-radius: 10px 10px 0 0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #FFFFFF;
+cursor: pointer;
+font-size: 20px;
+}
+.visible:hover{
+    color: rgb(42, 152, 216);
+}
+
+.invisible{
+    position: fixed;
+    right: 20px;
+    bottom:0;
+    background-color: #282d3600;
+    height: 35px;
+    width: 40px;
+    opacity: 1;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff00;
+    cursor: pointer;
+}
