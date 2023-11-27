@@ -21,7 +21,6 @@ export default function Index() {
   const [scrollTop, setScrollTop] = useState(0);
   const onScroll = e => {
     setScrollTop(e.target.documentElement.scrollTop);
-    setScrolling(e.target.documentElement.scrollTop > scrollTop);
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
